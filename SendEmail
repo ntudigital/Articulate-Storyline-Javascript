@@ -1,0 +1,15 @@
+// Email and TextEntryemail are both variables in storyline
+
+var player = GetPlayer(); 
+var mybr = "\n";
+var email = player.GetVar('Email');
+var myem = player.GetVar('TextEntryemail');
+
+var body= 
+"main part of email here" + mybr ;
+
+
+var subject = 'subject here'; 
+var emailBody = body;
+var mailto_link = 'mailto:' + email + '&cc=' +myem + '?subject=' + subject + '&body=' + encodeURIComponent(emailBody); 
+win = window.open(mailto_link, 'emailWin');

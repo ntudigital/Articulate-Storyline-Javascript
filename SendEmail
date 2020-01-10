@@ -8,7 +8,6 @@ var myem = player.GetVar('TextEntryemail');
 var body= 
 "main part of email here" + mybr ;
 
-
 var subject = 'subject here'; 
 var emailBody = body;
 var mailto_link = 'mailto:' + email + '&cc=' +myem + '?subject=' + subject + '&body=' + encodeURIComponent(emailBody); 
